@@ -8,23 +8,47 @@ padding: 0;
 background: #b6b6b0;
 width: 90%;
 max-width: 1000px;
-margin: auto;
+margin:auto;
+border-radius: 20px;
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
 }
 .menu li a{
     text-decoration: none;
     color: white;
     padding: 20px;
     display: block;
+    
 }
 .menu li {
     display: inline-block;
     text-align: center;
+    border-radius: 20px;
+    margin: .5rem;
 }
-.menu li a:hover{
-    background: #ef8354;
+
+.Home_Barnav:hover{
+    background-color: #777574;
 }
-.logo{
-    width: 100px;
-    height: 100px;
-    d
+.Menu_Barnav:hover{
+    background-color: #777574;
+
+}
+.staff_Barnav:hover{
+    background-color: #777574;
+
+}
+.carritoImg {
+    width: 20%;
+
+}
+.loginImg{
+    width: 9%;
+}
+.Home_Barnav,.Menu_Barnav,.staff_Barnav{
+    background-color:#D9D9D9 ;
+    border-radius: 20%;
+
 }
