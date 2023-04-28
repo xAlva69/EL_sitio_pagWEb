@@ -3,17 +3,17 @@ body{
     background: #e8e8e8;
 }
 .menu{
-list-style: none;
-padding: 0;
-background: #b6b6b0;
-width: 90%;
-max-width: 1000px;
-margin:auto;
-border-radius: 20px;
-display: flex;
-flex-direction: row;
-justify-content: center;
-align-items: center;
+    list-style: none;
+    padding: 0;
+    background: #b6b6b0;
+    max-width: 1000px;
+    margin:auto;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-end;
+    align-items: center;
+  
 }
 .menu li a{
     text-decoration: none;
@@ -40,15 +40,43 @@ align-items: center;
     background-color: #777574;
 
 }
-.carritoImg {
-    width: 20%;
 
+.carritoImg {
+    max-width: 40%;
 }
 .loginImg{
-    width: 9%;
+    max-width: 40%;
+    
 }
 .Home_Barnav,.Menu_Barnav,.staff_Barnav{
     background-color:#D9D9D9 ;
     border-radius: 20%;
 
+}
+.iconos{
+
+    display: flex;
+    flex-direction: row;
+    justify-self: flex-end;
+    border: 1px solid black;
+    width: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-end;
+
+
+}
+.liDerecha{
+    max-width: 80px;
+    
+    
+}
+.barnav{
+    border: 1px solid black;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    max-width: 500px;
 }
