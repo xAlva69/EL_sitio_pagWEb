@@ -1,30 +1,32 @@
+@font-face {
+    font-family: aloja;
+    src: url(./Aloja_Font/Aloja\ Ligh\ 400.otf);
+}
 body{
     font-family: Arial, Helvetica, sans-serif;
-    background: #e8e8e8;
+    background: #D9D9D9;
 }
 .menu{
     list-style: none;
-    padding: 0;
+    padding: 0px;
     background: #b6b6b0;
     max-width: 1000px;
     margin:auto;
-    border-radius: 20px;
-    display: flex;
-    flex-direction: row;
-    justify-content:flex-end;
-    align-items: center;
+    border-radius: 50px;
+    display: flex ;
+    flex-direction: row ;
+    justify-content:space-evenly ;
+    align-items:center;
   
 }
 .menu li a{
     text-decoration: none;
-    color: white;
-    padding: 20px;
-    display: block;
+    color: black;
+    padding: 13px;
+   
     
 }
 .menu li {
-    display: inline-block;
-    text-align: center;
     border-radius: 20px;
     margin: .5rem;
 }
@@ -42,41 +44,92 @@ body{
 }
 
 .carritoImg {
-    max-width: 40%;
+    max-width: 40px;
+    max-height: 40px;
 }
 .loginImg{
-    max-width: 40%;
-    
+  max-width: 35px;
+  max-height: 35px;
+
 }
+
+
 .Home_Barnav,.Menu_Barnav,.staff_Barnav{
-    background-color:#D9D9D9 ;
-    border-radius: 20%;
+    background-color: #D9D9D9;
+    border-radius: 15px;
+    margin-left: 3rem;
+    
+    
+    
 
 }
 .iconos{
-
-    display: flex;
-    flex-direction: row;
-    justify-self: flex-end;
-    border: 1px solid black;
-    width: 200px;
+ 
+    flex-grow: 1; 
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
     align-items: flex-end;
+   
 
 
+}   
+.carritoImg:hover{
+    scale: 1.2;
 }
-.liDerecha{
-    max-width: 80px;
-    
+.loginImg:hover{
+    scale: 1.2;
     
 }
+
+
 .barnav{
-    border: 1px solid black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 10rem;
+}
+.logogif{
+    
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    max-width: 500px;
+   
+}
+.gif{
+    max-width: 32%;
+    max-height: 32%;
+}
+.circulo1{
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    background-color: black;
+    margin-left: 10rem;
+
+}
+.circulo2{
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    background-color: black;
+    margin-left: 10rem;
+    
+}
+.circulo3{
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    background-color: black;
+    margin-left: 10rem;
+}
+.burbujas{
+    display: flex;
+    flex-direction: row;
+}
+.burbujas h1{
+    font-family: aloja;
+  transform: translate(-50%, -50%) rotate(-30deg); 
 }
