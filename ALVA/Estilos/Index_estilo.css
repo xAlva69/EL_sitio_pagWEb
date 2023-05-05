@@ -1,3 +1,9 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 @font-face {
     font-family: aloja;
     src: url(./Aloja_Font/Aloja\ Ligh\ 400.otf);
@@ -58,11 +64,11 @@ body{
     background-color: #D9D9D9;
     border-radius: 15px;
     margin-left: 3rem;
-    
-    
+
     
 
 }
+
 .iconos{
  
     flex-grow: 1; 
@@ -99,15 +105,15 @@ body{
    
 }
 .gif{
-    max-width: 32%;
-    max-height: 32%;
+    width: 30%;
+    height: 30%;
 }
 .circulo1{
     height: 250px;
     width: 250px;
     border-radius: 50%;
     background-color: black;
-    margin-left: 10rem;
+    animation: movimiento 5s linear infinite;
 
 }
 .circulo2{
@@ -115,7 +121,8 @@ body{
     width: 250px;
     border-radius: 50%;
     background-color: black;
-    margin-left: 10rem;
+    animation: movimiento 5s linear infinite;
+   
     
 }
 .circulo3{
@@ -123,13 +130,52 @@ body{
     width: 250px;
     border-radius: 50%;
     background-color: black;
-    margin-left: 10rem;
+    animation: movimiento 5s linear infinite;
+
+}
+
+.b1{
+    font-family: aloja;
+   
 }
 .burbujas{
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
 }
-.burbujas h1{
-    font-family: aloja;
-  transform: translate(-50%, -50%) rotate(-30deg); 
+.burbuja{
+    margin: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: black;
+    opacity: .3;
+    
+    position: absolute;
+    bottom: 0;
+    left: 5%;
+    animation: burbujas 3s linear infinite;
+}
+@keyframes burbujas{
+    0%{
+        bottom: 0;
+        opacity: 0;
+    }
+    50%{
+        opacity: .4;
+
+    }
+    100%{
+        bottom: 100vh;
+    }
+}
+@keyframes movimiento{
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(30px);
+    }
+    100%{
+        transform: translateY(0);
+    }
 }
